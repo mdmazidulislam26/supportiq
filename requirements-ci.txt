@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+numpy
+scikit-learn
+rank-bm25==0.2.2
+httpx
+pytest

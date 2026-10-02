@@ -1,0 +1,5 @@
+artifacts/*.db
+artifacts/threshold.json
+__pycache__/
+.pytest_cache/
+.env

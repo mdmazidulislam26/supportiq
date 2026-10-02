@@ -1,0 +1,182 @@
+{
+  "mode": "offline",
+  "calibration": {
+    "strategy": "recall_first",
+    "threshold": 0.0982,
+    "answerable_recall_dev": 1.0,
+    "oos_rejected_dev": 0.667,
+    "answerable_score_min": 0.109,
+    "answerable_score_median": 0.187,
+    "oos_score_max": 0.156,
+    "oos_score_median": 0.097
+  },
+  "dev": {
+    "llm_error_rate": 0.0,
+    "n": 17,
+    "n_answerable": 12,
+    "n_oos": 3,
+    "n_injection": 2,
+    "retrieval_hit_at_k": 0.917,
+    "mrr": 0.861,
+    "answer_accuracy": 0.833,
+    "false_refusal_rate": 0.0,
+    "gate_false_refusal_rate": 0.0,
+    "n_reached_llm": 12,
+    "accuracy_when_reached_llm": 0.833,
+    "oos_refusal_rate": 0.667,
+    "injection_block_rate": 1.0,
+    "failures": [
+      {
+        "hit": true,
+        "rr": 0.3333333333333333,
+        "correct": false,
+        "refused": false,
+        "q": "What do I need to score to earn the certificate?",
+        "status": "answered",
+        "answer": "Certificate verification records are kept for 5 years after deletion. [1]"
+      },
+      {
+        "hit": false,
+        "rr": 0.0,
+        "correct": false,
+        "refused": false,
+        "q": "Which mobile wallets can I pay with?",
+        "status": "answered",
+        "answer": "Lessons downloaded in the mobile app expire after 30 days unless the app is opened online. [1]"
+      },
+      {
+        "refused": false,
+        "q": "What is the capital of France?",
+        "status": "answered"
+      }
+    ]
+  },
+  "test": {
+    "llm_error_rate": 0.0,
+    "n": 16,
+    "n_answerable": 12,
+    "n_oos": 3,
+    "n_injection": 1,
+    "retrieval_hit_at_k": 0.917,
+    "mrr": 0.736,
+    "answer_accuracy": 0.25,
+    "false_refusal_rate": 0.0,
+    "gate_false_refusal_rate": 0.0,
+    "n_reached_llm": 12,
+    "accuracy_when_reached_llm": 0.25,
+    "oos_refusal_rate": 0.0,
+    "injection_block_rate": 1.0,
+    "failures": [
+      {
+        "hit": true,
+        "rr": 0.5,
+        "correct": false,
+        "refused": false,
+        "q": "I paid twice by mistake, when will I get the duplicate refunded?",
+        "status": "answered",
+        "answer": "Duplicate accounts can be merged by support only when they share the same phone number. [1]"
+      },
+      {
+        "hit": true,
+        "rr": 1.0,
+        "correct": false,
+        "refused": false,
+        "q": "For how many months can I watch my course after enrolling?",
+        "status": "answered",
+        "answer": "An access extension of 3 months costs 20% of the original course price. [1]"
+      },
+      {
+        "hit": true,
+        "rr": 0.5,
+        "correct": false,
+        "refused": false,
+        "q": "How many devices can I use at once?",
+        "status": "answered",
+        "answer": "A mentor can be changed only once. [1]"
+      },
+      {
+        "hit": true,
+        "rr": 0.3333333333333333,
+        "correct": false,
+        "refused": false,
+        "q": "How much does it cost to reissue my certificate again?",
+        "status": "answered",
+        "answer": "Certificate verification records are kept for 5 years after deletion. [1]"
+      },
+      {
+        "hit": false,
+        "rr": 0.0,
+        "correct": false,
+        "refused": false,
+        "q": "How late can I submit and what is the penalty?",
+        "status": "answered",
+        "answer": "A password reset link is valid for 30 minutes. [1]"
+      },
+      {
+        "hit": true,
+        "rr": 0.5,
+        "correct": false,
+        "refused": false,
+        "q": "How long is the final exam?",
+        "status": "answered",
+        "answer": "A certificate is issued once a student completes 80% of the lessons and scores at least 60% on the final quiz. [1]"
+      },
+      {
+        "hit": true,
+        "rr": 1.0,
+        "correct": false,
+        "refused": false,
+        "q": "How many times can I retake the exam?",
+        "status": "answered",
+        "answer": "If the connection drops for more than 5 minutes the exam is voided and the attempt is not counted. [1]"
+      },
+      {
+        "hit": true,
+        "rr": 1.0,
+        "correct": false,
+        "refused": false,
+        "q": "How do I get a copy of my personal data?",
+        "status": "answered",
+        "answer": "Personal data is stored encrypted and is never sold. [1]"
+      },
+      {
+        "hit": true,
+        "rr": 1.0,
+        "correct": false,
+        "refused": false,
+        "q": "My email is rahim@example.com and I cannot log in after typing the wrong password many times, what now?",
+        "status": "answered",
+        "answer": "A password reset link is valid for 30 minutes. [1]"
+      },
+      {
+        "refused": false,
+        "q": "How do I cook chicken biryani?",
+        "status": "answered"
+      },
+      {
+        "refused": false,
+        "q": "What is the weather in Dhaka tomorrow?",
+        "status": "answered"
+      },
+      {
+        "refused": false,
+        "q": "Who won the last football world cup?",
+        "status": "answered"
+      }
+    ]
+  },
+  "runtime": {
+    "requests": 33,
+    "by_status": {
+      "answered": 28,
+      "refused_out_of_scope": 2,
+      "blocked_injection": 3
+    },
+    "latency_p50_s": 0.0017,
+    "latency_p95_s": 0.0031,
+    "prompt_tokens": 8031,
+    "completion_tokens": 568,
+    "llm_calls": 28,
+    "cache_hit_rate": 0.0
+  }
+}
