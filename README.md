@@ -1,3 +1,4 @@
+![ci](https://github.com/mdmazidulislam26/supportiq/actions/workflows/ci.yml/badge.svg)
 # SupportIQ: an evaluated, guardrailed RAG service
 
 A support assistant for an online learning platform. It answers questions about refunds, deadlines, exams, payments and accounts **only from policy documents**, cites its sources, refuses what it should not answer, and is built to be **measured**, not just demoed.
